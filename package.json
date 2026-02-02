@@ -1,0 +1,43 @@
+{
+  "name": "get-shit-specd",
+  "version": "0.2.0",
+  "description": "Spec-first development workflow for Claude Code. Transform vague ideas into engineering-ready specs.",
+  "type": "module",
+  "bin": {
+    "gss": "./bin/gss.ts",
+    "get-shit-specd": "./bin/gss.ts"
+  },
+  "scripts": {
+    "typecheck": "bun --bun tsc --noEmit"
+  },
+  "files": [
+    "bin",
+    "claude",
+    "examples",
+    "README.md"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "specs",
+    "product-management",
+    "ai-assisted",
+    "tdd",
+    "bdd",
+    "gherkin",
+    "bun"
+  ],
+  "author": "Brannon Lucas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brannonlucas/get-shit-specd.git"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}
