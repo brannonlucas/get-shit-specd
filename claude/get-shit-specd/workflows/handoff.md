@@ -14,8 +14,24 @@ Read:
 </step>
 
 <step name="map_requirements">
-Create requirement IDs, each mapped to one or more acceptance scenarios.
+Use requirement IDs from SCOPE (REQ-{SPEC_ID}-{PRIORITY}-{SEQ}).
+Map each requirement to its acceptance scenarios from 04-ACCEPTANCE.md.
 Requirements describe OUTCOMES, not tasks.
+</step>
+
+<step name="generate_traceability_matrix">
+Create a traceability matrix linking:
+- Requirement ID → Acceptance scenario numbers → Spec source file:section
+
+Example format:
+| REQ ID | Acceptance Scenarios | Source |
+|--------|---------------------|--------|
+| REQ-001-P0-01 | 1.1.1, 1.1.2, 1.1.3 | 01-SCOPE.md#email-signup |
+
+This enables:
+- Coverage verification (every REQ has acceptance criteria)
+- Change impact analysis (which acceptance scenarios if REQ changes)
+- Engineering trace-back to product intent
 </step>
 
 <step name="summarize_context">

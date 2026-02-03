@@ -69,6 +69,12 @@ Main flow writes:
 - 00-BRIEF.md (problem, JTBD, goal, constraints, risks)
 - 01-SCOPE.md (in/out with priorities, dependencies, NFRs)
 
+**Requirement ID Convention:**
+Generate stable IDs at spec time using format: `REQ-{SPEC_ID}-{PRIORITY}-{SEQ}`
+- Example: REQ-001-P0-01, REQ-001-P1-02
+- IDs remain stable across spec revisions
+- Enables traceability from spec → handoff → implementation
+
 These require intake context, so main flow handles them.
 </step>
 

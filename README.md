@@ -140,6 +140,12 @@ bunx get-shit-specd update
 
 This updates GSS files while preserving your `spec-config.json`.
 
+## Acknowledgments
+
+GSS was heavily influenced by [get-shit-done (GSD)](https://github.com/glittercowboy/get-shit-done), an execution-focused workflow for Claude Code. Where GSD excels at **building** (phases, plans, atomic commits), GSS focuses on what comes **before** — ensuring you spec the right thing before you build it.
+
+They're designed to work together: GSS specs feed into GSD phases.
+
 ## License
 
 MIT

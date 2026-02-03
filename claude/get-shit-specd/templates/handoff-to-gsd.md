@@ -10,6 +10,7 @@ Translate a Ready spec into engineering-facing requirements. Engineering owns im
 
 ## Outputs
 - Requirement IDs mapped to acceptance scenarios
+- **Traceability matrix** (REQ → Acceptance → Spec section)
 - Risk notes and open questions
 - Success criteria summary
 
