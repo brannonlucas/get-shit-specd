@@ -17,6 +17,8 @@ Find:
 - acceptance that cannot be objectively verified
 - data/UX mismatches
 - analytics gaps
+- missing Implementation Surface (no files created/modified listed)
+- file ownership conflicts with other specs in .planning/specs/ (check their Implementation Surfaces)
 </step>
 
 <step name="patch_or_questions">

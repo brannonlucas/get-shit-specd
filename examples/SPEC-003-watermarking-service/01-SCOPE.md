@@ -44,3 +44,23 @@
 | Security | Clean URLs require purchase validation; long-lived (24h+) after purchase — customers "own" their images |
 | Accessibility | Watermark text not conveyed to screen readers (decorative) |
 | Observability | Success/failure rates visible, alert on >5% failure rate |
+
+## Implementation Surface
+
+### Files Created (owned exclusively by this spec)
+- lib/watermark.ts
+- lib/storage/dual-store.ts
+- functions/inngest/watermark-step.ts
+
+### Files Modified (shared — coordinate with other specs)
+- functions/inngest/face-swap.ts
+- lib/storage/r2.ts
+- app/api/cards/[id]/route.ts
+
+### Shared Surfaces
+- **Types consumed:** Card, Deck, R2Object
+- **Types created:** WatermarkConfig, DualStoreResult
+- **Design tokens used:** None (backend service)
+- **Routes added:** None (modifies existing card route)
+- **Components consumed:** None (backend service)
+- **Components created:** None (backend service)

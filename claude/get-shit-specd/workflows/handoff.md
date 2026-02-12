@@ -48,12 +48,28 @@ List:
 - Dependencies on other work
 </step>
 
+<step name="surface_implementation">
+Extract from 01-SCOPE.md Implementation Surface section:
+- Files created (exclusive ownership)
+- Files modified (shared)
+- Shared surfaces (types, tokens, routes, components)
+
+If .planning/CONTRACTS.md exists:
+- Read contracts relevant to this spec
+- List contract dependencies (types/components this spec consumes from others)
+- List contracts this spec provides to others
+- Include suggested branch name and dispatch order from CONTRACTS.md
+</step>
+
 <step name="write_handoff">
 Write HANDOFF.md with:
 - Requirements mapped to acceptance scenarios
 - Problem context and success criteria
 - Risks and open questions
-- NO engineering tasks, phases, or file paths
+- Implementation Surface (files, types, tokens, routes, components)
+- Contract dependencies (if CONTRACTS.md exists)
+- Dispatch section: suggested branch name, owned files, contract dependencies
+- NO engineering tasks, phases, or technical approach decisions
 </step>
 
 </process>

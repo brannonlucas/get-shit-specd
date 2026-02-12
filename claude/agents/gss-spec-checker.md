@@ -52,6 +52,17 @@ Based on tier:
 - Scan for vague language: "works", "properly", "correctly", "valid"
 - WARN for each instance (suggest specific replacement)
 
+### Implementation Surface Completeness
+Based on tier:
+- Micro: Skip (not applicable)
+- Standard: WARN if Implementation Surface section is missing or empty
+- Full: FAIL if Implementation Surface section is missing or empty
+
+When present, check:
+- At least one file in "Files Created"
+- Shared Surfaces section filled (or explicitly "None")
+- File paths look plausible (not just placeholders like "TBD" for Full tier)
+
 ### Synthesizer Issues
 - If synthesizer ran, any FAIL items block Ready
 - WARN items are advisory

@@ -67,13 +67,21 @@ Record unknowns as assumptions + open questions.
 <step name="write_brief_and_scope">
 Main flow writes:
 - 00-BRIEF.md (problem, JTBD, goal, constraints, risks)
-- 01-SCOPE.md (in/out with priorities, dependencies, NFRs)
+- 01-SCOPE.md (in/out with priorities, dependencies, NFRs, Implementation Surface)
 
 **Requirement ID Convention:**
 Generate stable IDs at spec time using format: `REQ-{SPEC_ID}-{PRIORITY}-{SEQ}`
 - Example: REQ-001-P0-01, REQ-001-P1-02
 - IDs remain stable across spec revisions
 - Enables traceability from spec → handoff → implementation
+
+**Implementation Surface:**
+After writing in-scope items, fill the Implementation Surface section:
+- Identify likely files to create (new components, routes, utilities)
+- Identify files to modify (existing layouts, route config, shared types)
+- List shared surfaces: types consumed/created, tokens, routes, components
+- If exact file paths are unknown, infer from feature description and project structure
+- Mark unknowns as "TBD" — the /gss:contracts step refines these later
 
 These require intake context, so main flow handles them.
 </step>

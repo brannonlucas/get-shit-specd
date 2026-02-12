@@ -13,6 +13,8 @@ Translate a Ready spec into engineering-facing requirements. Engineering owns im
 - **Traceability matrix** (REQ → Acceptance → Spec section)
 - Risk notes and open questions
 - Success criteria summary
+- **Implementation Surface** (from SCOPE: files created/modified, shared types, tokens, routes, components)
+- **Contract dependencies** (from CONTRACTS.md if it exists: types/components this spec consumes from others)
 
 ## Principles
 - **WHAT, not HOW**: Define outcomes, not implementation

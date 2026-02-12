@@ -28,6 +28,9 @@ GSS is a spec workflow that produces outcome-focused specs. Specs define WHAT mu
 - `/gss:review-spec` — Red-team a spec for ambiguity and missing states
 - `/gss:handoff` — Generate requirements mapping for engineering
 
+### Coordination
+- `/gss:contracts` — Extract shared contracts from Ready specs for parallel development
+
 ### Status
 - `/gss:progress` — Show all specs and their status (Draft/Review/Ready)
 
@@ -37,7 +40,8 @@ GSS is a spec workflow that produces outcome-focused specs. Specs define WHAT mu
 1. /gss:setup          ← First time only
 2. /gss:new-spec       ← Create spec with intake questions
 3. /gss:review-spec    ← Red-team for gaps
-4. /gss:handoff        ← Generate engineering requirements
+4. /gss:contracts      ← Extract shared contracts (when 2+ specs Ready)
+5. /gss:handoff        ← Generate engineering requirements
 ```
 
 ## Spec Tiers
