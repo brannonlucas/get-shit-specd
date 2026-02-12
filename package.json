@@ -1,11 +1,11 @@
 {
   "name": "get-shit-specd",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Spec-first development workflow for Claude Code. Transform vague ideas into engineering-ready specs.",
   "type": "module",
   "bin": {
-    "gss": "./bin/gss.ts",
-    "get-shit-specd": "./bin/gss.ts"
+    "gss": "./bin/gss",
+    "get-shit-specd": "./bin/gss"
   },
   "scripts": {
     "typecheck": "bun --bun tsc --noEmit"
